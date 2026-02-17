@@ -10,7 +10,7 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'Akofficialadmin')
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
@@ -166,7 +166,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
+URL = environ.get("URL", "https://ak-filter-bots.onrender.com/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
@@ -196,5 +196,6 @@ else:
 # Don't Remove Credit @Akofficialadmin_bot
 # Subscribe YouTube Channel For Amazing Bot @Akofficialadmin_bot
 # Ask Doubt on telegram @Akofficialadmin_bot
+
 
 
