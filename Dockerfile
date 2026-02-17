@@ -1,8 +1,8 @@
-# Don't Remove Credit @VJ_Bots
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @Akofficialadmin_bot
+# Subscribe YouTube Channel For Amazing Bot @Akofficialadmin_bot
+# Ask Doubt on telegram @Akofficialadmin_bot
 
-FROM python:3.10.8-slim-buster
+FROM python:3.10-slim-buster
 
 RUN apt update && apt upgrade -y
 RUN apt install git -y
@@ -14,4 +14,5 @@ RUN mkdir /VJ-FILTER-BOT
 WORKDIR /VJ-FILTER-BOT
 COPY . /VJ-FILTER-BOT
 CMD ["python", "bot.py"]
+
 
