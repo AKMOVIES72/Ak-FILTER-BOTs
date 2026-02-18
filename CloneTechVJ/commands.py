@@ -108,7 +108,7 @@ async def start(client, message):
             size=get_size(files1['file_size'])
             f_caption=files1['caption']
             if f_caption is None:
-                f_caption = f"@VJ_Bots {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1['file_name'].split()))}"
+                f_caption = f"@AKMOVIESSTELUGU {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1['file_name'].split()))}"
             if cd["update_channel_link"] != None:
                 up = cd["update_channel_link"]
                 button = [[
@@ -156,7 +156,7 @@ async def start(client, message):
     size=get_size(files['file_size'])
     f_caption=files['caption']
     if f_caption is None:
-        f_caption = f"@VJ_Bots {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files['file_name'].split()))}"
+        f_caption = f"@AKMOVIESSTELUGU {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files['file_name'].split()))}"
     if cd["update_channel_link"] != None:
         up = cd["update_channel_link"]
         button = [[
@@ -167,7 +167,7 @@ async def start(client, message):
         reply_markup=None
     k = await temp.BOT.send_cached_media(chat_id=PUBLIC_FILE_CHANNEL, file_id=file_id)
     vj = await client.get_messages(PUBLIC_FILE_CHANNEL, k.id)
-    m = getattr(vj, vj.media.value)
+    m = getattr(AK, AK.media.value)
     file_id = m.file_id
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
@@ -192,7 +192,7 @@ async def settings(client, message):
     api = await client.ask(message.chat.id, "<b>Now Send Your Api</b>")
     try:
         shortzy = Shortzy(api_key=api.text, base_site=url.text)
-        link = 'https://t.me/VJ_Botz'
+        link = 'https://t.me/Akofficialadmin_bot'
         await shortzy.convert(link)
     except Exception as e:
         await message.reply(f"**Error In Converting Link**\n\n<code>{e}</code>\n\n**Start The Process Again By - /settings**", reply_markup=InlineKeyboardMarkup(btn))
