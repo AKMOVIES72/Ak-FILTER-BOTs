@@ -59,7 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Akhil:7KeWvNxG8AlaGNV0@cluster0.4vd0vop.mongodb.net/?appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "autofilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'akcollection')
 
@@ -112,7 +112,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'gplinks.com')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '8d4da01b43d16064d2356273246d3d24702c7e46')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'http://t.me/Akofficialadmin_bot')
@@ -196,6 +196,7 @@ else:
 # Don't Remove Credit @Akofficialadmin_bot
 # Subscribe YouTube Channel For Amazing Bot @Akofficialadmin_bot
 # Ask Doubt on telegram @Akofficialadmin_bot
+
 
 
 
