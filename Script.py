@@ -463,7 +463,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
  
     RESTART_TXT = """
-<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+<b> @𝗙𝗶𝗹𝗲𝘀𝗵𝗮𝗿𝗶𝗻𝗴𝗴𝗴𝗴_𝗯𝗼𝘁 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
 📅 Dᴀᴛᴇ : <code>{}</code>
 ⏰ Tɪᴍᴇ : <code>{}</code>
@@ -752,5 +752,6 @@ Example:- /set_caption 📕 File Name: {filename}
 
 
     
+
 
 
